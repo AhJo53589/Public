@@ -2,6 +2,23 @@
 
 ## 语法
 
+### Functor 伪函数
+```C++
+// 一段代码，说一下运行结果
+class A {
+public: 
+    void f1() {}
+    virtual void f2() {}
+};
+
+int main()
+{
+	A* a = nullptr;
+	a->f1();
+	a->f2();
+}
+```
+
 ### 对象指针为NULL，为什么还是可以调用成员函数
 ```C++
 // 一段代码，说一下运行结果
