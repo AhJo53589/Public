@@ -116,6 +116,19 @@ int main()
 
 [详细](https://blog.csdn.net/chenzrcd/article/details/60472616)
 
+### 命令行启动参数
+```C++
+int main(int argc, char * argv[])
+{
+	for (int i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
+}
+```
+
+---
+
 ## 知识
 
 ### C++三大特性
