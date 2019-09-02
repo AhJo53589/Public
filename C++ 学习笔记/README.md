@@ -136,3 +136,12 @@ int main(int argc, char * argv[])
 静态绑定：编译时绑定，通过对象调用  
 动态绑定：运行时绑定，通过地址实现  
 [详细](https://blog.csdn.net/iicy266/article/details/11906509)
+
+### C++堆和栈的区别和联系
+[C++堆和栈的区别和联系](https://blog.csdn.net/yangyong0717/article/details/78001609)
+
+### C++类内存分布
+[C++类内存分布](https://www.cnblogs.com/jerry19880126/p/3616999.html)
+
+### C++中引用和指针的区别
+[C++中引用和指针的区别](https://blog.csdn.net/listening_music/article/details/6921608)
