@@ -140,8 +140,11 @@ int main(int argc, char * argv[])
 ### C++堆和栈的区别和联系
 [C++堆和栈的区别和联系](https://blog.csdn.net/yangyong0717/article/details/78001609)
 
+### C++ 虚函数表剖析
+[C++ 虚函数表剖析](https://www.jianshu.com/p/4649fae206ea)  
+
 ### C++类内存分布
-[C++类内存分布](https://www.cnblogs.com/jerry19880126/p/3616999.html)  
+[C++ 对象内存模型](https://www.jianshu.com/p/9fb37bb3094f)  
 [深入研究C++多态（虚函数和虚继承）](https://www.jianshu.com/p/02183498a2c2)
 
 ### C++中引用和指针的区别
