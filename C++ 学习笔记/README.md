@@ -116,7 +116,10 @@ sizeof(Empty) = 1。
 * sizeof(shared_ptr)  
 由于control_block的存在，shared_ptr的size通常是2倍裸指针或unique_ptr的大小，此外，shared_ptr的引用计数增减是原子操作。
 
-### Functor 伪函数
+### Functor 仿函数
+[详细](https://www.cnblogs.com/decade-dnbc66/p/5347088.html)
+
+### 类成员函数
 ```C++
 // 一段代码，说一下运行结果
 class A {
