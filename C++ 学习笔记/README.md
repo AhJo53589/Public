@@ -159,6 +159,60 @@ int main(int argc, char * argv[])
 
 ---
 
+## C++11
+### 智能指针
+std::shared_ptr采用引用计数，每一个shared_ptr的拷贝都指向相同的内容，当最后一个shared_ptr析构的时候，内存被释放。  
+
+unique_ptr是一个独占指针，它不允许其他的智能指针共享其内部的指针。
+
+弱引用指针weak_ptr是用来监视shared_ptr的，不会使引用计数加1或减1。  
+它作为一个旁观者来监视shared_ptr管理的资源是否存在，也可以用来返回this指针或解决循环引用问题。  
+它不共享指针，没有重载*和->， 因此不能操作资源
+
+> 正确使用智能指针的基本规范：  
+> * 不使用相同的内置指针值初始化（或reset）多个智能指针。
+> * 不delete get()返回的指针。
+> * 不使用get()初始化或reset另一个智能指针。
+> * 如果你使用get()返回的指针，记住当最后一个对应的智能指针销毁后，你的指针就变为无效了。
+> * 如果你使用智能指针管理的资源不是new分配的内存，记住传递给它一个删除器。
+
+[智能指针 shared_ptr](https://www.jianshu.com/p/d304cfa56ca0)  
+[智能指针 unique_ptr](https://www.jianshu.com/p/7aa369cc5c0b)  
+[智能指针 weak_ptr](https://www.jianshu.com/p/d459616d5ba2)  
+
+### 委托构造函数（Delegating constructors）
+C++11扩展了构造函数的功能，增加了委托构造函数的概念，使得一个构造函数可以委托其他构造函数完成工作。  
+
+
+> 和其他构造函数一样，一个委托构造函数也有一个成员初始值的列表和函数体。  
+> 在委托构造函数内，成员初始值列表只有一个唯一的入口，就是类名本身。  
+> 和其他成员初始值一样，类名后面紧跟圆括号括起来的参数列表，参数列表必须与类中另外一个构造函数匹配。  
+
+```C++
+struct Rect
+{
+	Rect() : Rect(0, 0, 0, 0, 0, 0) {}
+
+	Rect(int l, int t, int r, int b) : Rect(l, t, r, b, 0, 0) {}
+
+	Rect(int l, int t, int r, int b, int lc, int fc)
+		: left(l), top(t), right(r), bottom(b), line_color(lc), fill_color(fc)
+	{
+		//do something else...
+	}
+
+	int left;
+	int top;
+	int right;
+	int bottom;
+	int line_color;
+	int fill_color;
+};
+```
+[委托构造函数](https://www.jianshu.com/p/01c9dd886ff1)
+
+
+---
 ## 知识
 
 ### C++三大特性
