@@ -180,6 +180,12 @@ unique_ptr是一个独占指针，它不允许其他的智能指针共享其内�
 [智能指针 unique_ptr](https://www.jianshu.com/p/7aa369cc5c0b)  
 [智能指针 weak_ptr](https://www.jianshu.com/p/d459616d5ba2)  
 
+
+
+[实现智能指针1：unique_ptr](https://www.jianshu.com/p/77c2988be336)  
+
+
+
 ### 委托构造函数（Delegating constructors）
 C++11扩展了构造函数的功能，增加了委托构造函数的概念，使得一个构造函数可以委托其他构造函数完成工作。  
 
@@ -210,6 +216,13 @@ struct Rect
 };
 ```
 [委托构造函数](https://www.jianshu.com/p/01c9dd886ff1)
+
+
+
+### 右值引用、移动语义和完美转发
+
+[我理解的右值引用、移动语义和完美转发](https://www.jianshu.com/p/d19fc8447eaa)
+
 
 
 ---
