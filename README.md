@@ -2,6 +2,8 @@
 
 【[C 学习笔记](./C 学习笔记/README.md)】  
 
+【[C# 学习笔记](./C# 学习笔记/README.md)】  
+
 【[C++ 学习笔记](./C++ 学习笔记/README.md)】  
 
 【[Git 学习笔记](./Git 学习笔记/README.md)】  
