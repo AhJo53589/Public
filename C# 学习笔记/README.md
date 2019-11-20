@@ -23,6 +23,8 @@
 
 ## 类成员访问修饰符
 
+[类修饰符](https://blog.csdn.net/moakun/article/details/78638547)
+
 1. private
 
    私有成员只能从声明它的类的内部访问。
