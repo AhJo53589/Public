@@ -52,3 +52,9 @@
 > LRU（Least Recently Used）最近最久未使用的意思。  
 
 [详细](https://www.cnblogs.com/dolphin0520/p/3749259.html)  
+
+### 匈牙利算法
+
+[匈牙利算法](https://blog.csdn.net/sunny_hun/article/details/80627351)
+
+[矩阵游戏](http://hzwer.com/1237.html?tdsourcetag=s_pctim_aiomsg)
