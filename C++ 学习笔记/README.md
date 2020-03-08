@@ -51,15 +51,17 @@ C++:
 
 [C/C++ 中 static 的用法](https://www.jianshu.com/p/7034c4dbc496)
 
-### sizeof字节数
-* 空struct和空class  
+### sizeof 字节数
+* 空 struct 和空 class  
 sizeof(Empty) = 1。  
 
-* 32位64位  
-最大区别是32位指针大小为4byte，而64位的指针大小为8byte。  
+* 32 位 64 位  
+最大区别是 32 位指针大小为 4byte，而 64 位的指针大小为 8byte。  
 [C++ 32位64位的区别](https://blog.csdn.net/crystal_lpx/article/details/71600721)  
 
 * 字节对齐  
+
+  [四字节内存对齐](https://blog.csdn.net/liujianli123/article/details/47045929)
 > **准则**  
 > 字节对齐的细节和具体编译器实现相关，但一般而言，满足三个准则：
 > 1) 结构体变量的首地址能够被其最宽基本类型成员的大小所整除；
@@ -76,11 +78,11 @@ sizeof(Empty) = 1。
 >     char d;
 > };
 > ```
-> 1. 如果只有a，那么是4。  
-> 2. 如果只有a和b，那么应用第3条，会在b后面填充字节，所以是4 + 1 + (3)。
-> 3. 如果只有a和c，那么应用第2条，会在c前面填充，所以是4 + (4) + 80。
-> 4. 如果只有b和c，同上，1 + (7) + 80。
-> 4. 如果abcd，那么应用第3条，会在c后面填充字节，所以是4 + 1 + (3) + 80 + 1 + (7)。  
+> 1. 如果只有 a，那么是 4。  
+> 2. 如果只有 a 和 b，那么应用第 3 条，会在 b 后面填充字节，所以是 4 + 1 + (3)。
+> 3. 如果只有 a 和 c，那么应用第 2 条，会在c前面填充，所以是 4 + (4) + 8 * 10。
+> 4. 如果只有 b 和 c，同上，1 + (7) + 8 * 10。
+> 4. 如果abcd，那么应用第3条，会在 c 后面填充字节，所以是 4 + 1 + (3) + 8 * 10 + 1 + (7)。  
 > 
 > 所以sizeof(Test) = 96  
 
@@ -115,6 +117,8 @@ sizeof(Empty) = 1。
 
 * sizeof(shared_ptr)  
 由于control_block的存在，shared_ptr的size通常是2倍裸指针或unique_ptr的大小，此外，shared_ptr的引用计数增减是原子操作。
+
+
 
 ### Functor 仿函数
 [详细](https://www.cnblogs.com/decade-dnbc66/p/5347088.html)
@@ -224,6 +228,10 @@ struct Rect
 [我理解的右值引用、移动语义和完美转发](https://www.jianshu.com/p/d19fc8447eaa)
 
 
+
+### emplace
+
+emplace_back是模板函数，对于{0}它无法确定是啥东东。push_back不是模板函数，它会直接构造一个对应的对象拷过去。
 
 ---
 ## 知识
