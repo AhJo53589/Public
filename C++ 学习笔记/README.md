@@ -233,6 +233,27 @@ struct Rect
 
 emplace_back是模板函数，对于{0}它无法确定是啥东东。push_back不是模板函数，它会直接构造一个对应的对象拷过去。
 
+
+
+### 输入输出流重定向
+
+```cpp
+    FILE* ssin;
+    freopen_s(&ssin, "1.in", "r", stdin);
+
+    FILE* ssans;
+    freopen_s(&ssans, "1.ans", "w", stdout);
+
+    Solution sln;
+    sln.main();
+
+    freopen_s(&ssans, "CON", "w", stdout);
+```
+
+
+
+[C语言中输入输出重定向，freopen()妙用。](https://blog.csdn.net/zz460833359/article/details/48734935?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+
 ---
 ## 知识
 
