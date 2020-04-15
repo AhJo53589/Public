@@ -2,6 +2,10 @@
 
 ## 语法
 
+### std::sort
+
+[std::sort源码剖析](http://feihu.me/blog/2014/sgi-std-sort/)
+
 ### const
 * 修饰常指针
 > const int *A; //const修饰指向的对象，A可变，A指向的对象不可变  

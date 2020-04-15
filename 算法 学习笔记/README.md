@@ -62,3 +62,7 @@
 [匈牙利算法&KM算法](https://zhuanlan.zhihu.com/p/62981901)
 
 [矩阵游戏](http://hzwer.com/1237.html?tdsourcetag=s_pctim_aiomsg)
+
+### 快慢指针
+
+[证明利用快慢指针寻找有环单链表中环的起点算法](https://blog.csdn.net/l294265421/article/details/50478818)
