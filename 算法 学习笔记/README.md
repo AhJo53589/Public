@@ -66,3 +66,9 @@
 ### 快慢指针
 
 [证明利用快慢指针寻找有环单链表中环的起点算法](https://blog.csdn.net/l294265421/article/details/50478818)
+
+
+
+### 康托展开&康托逆展开
+
+[康托展开&康托逆展开 的写法](https://www.cnblogs.com/Mychael/p/8282895.html)
